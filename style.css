@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'DMSans-Bold';
+    src: url('font/DMSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'DMSans-Medium';
+    src: url('font/DMSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('font/DMSans-Regular.ttf');
+}
+:root{
+    --font1: 'DMSans-Bold';
+    --font2: 'DMSans-Medium';
+    --font3: 'DMSans-Regular';
+
+    --cor1: #00DF5E;
+    --cor2: #F9F9F9;
+    --cor3: #828282;
+    --cor4: #333333;
+    --cor5: #212121;
+    --cor6: #171717;
+}
