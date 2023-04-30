@@ -67,14 +67,15 @@ header .links a>li:hover{
 }
 
 main{
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
+    cursor: default;
 }
 
 #p1{
     display: flex;
     justify-content: space-around;
-    margin: 80px 0px;
+    height: 400px;
     align-items: center;
 }
 #p1 .introducao{
@@ -107,6 +108,7 @@ main{
     background-color: var(--cor1);
     border: none;
     margin-right: 20px;
+    font-weight: 700;
 }
 #p1 .introducao > .btn2{
     background-color: var(--cor6);
@@ -123,7 +125,11 @@ main{
 }
 
 #p2{
-    margin: 80px 0px;   
+    justify-content: space-around;
+    height: 400px;
+    align-items: center; 
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 #p2 .textSobre{
     margin: 0 auto;
@@ -148,7 +154,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    margin: 80px 0px;
+    margin: 50px 0px;
 }
 #p2 .conteinerImg {
     background-color: var(--cor4);
@@ -169,6 +175,7 @@ main{
     color: var(--cor2);
     font-family: var(--font1);
     font-size: 20px;
+
 }
 #p2 .info p{
     color: var(--cor3);
@@ -184,16 +191,15 @@ main{
     box-shadow: 0px 0px 25px var(--cor3);
     transition: all 0.3s ease;
 }
-  
+
 #p3{
-    margin: 150px 0px;   
-    display: flexbox;
-    width: 100%;
+    justify-content: space-around;
+    height: 650px;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
-#p3 .conteiner{
-    margin: 0 auto;
-}
-#p3 .conteiner h1{
+#p3 .conteiner h1 {
     color: var(--cor2);
     font-size: 30px;
     margin: 30px 0px;
@@ -201,30 +207,128 @@ main{
     font-family: var(--font2);
     text-align: center;
 }
-#p3 .caixa{
+#p3 .caixa {
     display: inline-block;
     margin: 20px;
     width: 350px;
     height: 240px;
     background-color: var(--cor5);
-    border:1px solid #333333
+    border: 1px solid #333333;
+    cursor: pointer;
 }
-#p3 .caixaIn{
+#p3 .caixaIn {
     width: 300px;
     height: 130px;
     background-color: var(--cor6);
     margin: 20px;
     border: 1px solid #333333;
 }
-#p3 .caixa>  h2{
+#p3 .caixa > h2 {
     color: var(--cor2);
     padding-left: 20px;
     font-family: var(--font1);
     font-size: 20px;
 }
-#p3 .caixa>  p{
+#p3 .caixa > p {
     color: var(--cor3);
     padding-left: 20px;
     font-family: var(--font3);
     font-size: 15px;
+}
+
+#p4{
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+#p4 .conteiner h1 {
+    color: var(--cor2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+#p4 .caixa {
+    width: 350px;
+    height: 240px;
+    display: inline-block;
+    background-color: var(--cor5);
+    padding: 10px 25px;
+    margin: 10px;
+    border: 1px solid #333333;
+    position: relative;
+}
+#p4 .caixa > img{
+    padding: 20px;
+}
+#p4 .caixa > p{
+    color: var(--cor3);
+    font-family: var(--font2);
+    font-size: 25px;
+    padding-top: 50px;
+    cursor: default;
+}
+#p4 .caixa::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor1);
+    transition-duration: 0.3s;
+}
+#p4 .caixa:hover::after {
+    width: 100%;
+}
+
+#p5{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#p5 .conteiner> h1 {
+    color: var(--cor2);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#p5 .conteinerIn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#p5 .conteinerIn>.caixa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+#p5 .conteinerIn> .caixa{
+    background-color: var(--cor5);
+    height: 130px;
+    width: 130px;
+    border: 1px solid #333333;
+}
+#p5 .conteinerIn> .caixa:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px var(--cor1);
+    transition: all 0.3s ease;
+}
+
+footer{
+    background-color: var(--cor5);
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--cor2);
+}
+footer p>a{
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: 600;
 }
